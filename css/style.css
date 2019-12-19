@@ -3,3 +3,12 @@
   padding: 0;
   box-sizing: border-box;
 }
+body{
+  background-color: #B92D50;
+}
+.title{
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 25px;
+  color: white;
+}
