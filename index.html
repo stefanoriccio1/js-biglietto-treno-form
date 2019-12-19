@@ -11,10 +11,22 @@
   </head>
   <body>
     <div class="tabella_prezzi wrapper">
-      <!-- di inserimento dati -->
-      <div class="row">
-        <h1 class="title">CALCOLA IL PREZZO DEL TUO BIGLIETTO</h1>
-        <div class="box">
+      <!-- inserimento dati -->
+      <h1 class="title">CALCOLA IL PREZZO DEL TUO BIGLIETTO</h1>
+      <div class="container">
+        <div class="row">
+          <label for="nome">Nome Cognome</label>
+          <input id="nome" type="text" name="nome_utente" value="" placeholder="Inserisci il tuo nome">
+          <label for="km">Km da percorrere</label>
+          <input id="km" type="number" name="numero_km" value="" placeholder="Inserisci Km">
+          <label for="eta">Fascia d'età</label>
+          <select id="eta" name="eta_utente">
+            <option value="Minorenne">Minorenne</option>
+            <option value="Maggiorenne">Maggiorenne</option>
+            <option value="Over 65">Over 65</option>
+          </select>
+        </div>
+        <!-- <div class="box">
           <h2>Km da percorrere</h2>
           <p id="km"></p>
         </div>
@@ -25,7 +37,7 @@
         <div class="box">
           <h2>Prezzo biglietto</h2>
           <p id=prezzo_biglietto>euro</p>
-        </div>
+        </div> -->
         <!-- inserimento dati -->
       </div>
       <!-- generazione biglietto -->
@@ -35,6 +47,6 @@
       </div>
       <!-- /generazione biglietto -->
     </div>
-    <script src="js/script.js" charset="utf-8"></script>
+    <!-- <script src="js/script.js" charset="utf-8"></script> -->
   </body>
 </html>
