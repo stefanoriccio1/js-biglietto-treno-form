@@ -35,3 +35,6 @@ body{
   color: white;
   margin: 20px auto;
 }
+input{
+  height: 25px;
+}
