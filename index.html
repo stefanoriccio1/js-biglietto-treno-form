@@ -13,18 +13,24 @@
     <div class="tabella_prezzi wrapper">
       <!-- inserimento dati -->
       <h1 class="title">CALCOLA IL PREZZO DEL TUO BIGLIETTO</h1>
-      <div class="container">
+      <div class="form_dati">
         <div class="row">
-          <label for="nome">Nome Cognome</label>
-          <input id="nome" type="text" name="nome_utente" value="" placeholder="Inserisci il tuo nome">
-          <label for="km">Km da percorrere</label>
-          <input id="km" type="number" name="numero_km" value="" placeholder="Inserisci Km">
-          <label for="eta">Fascia d'età</label>
-          <select id="eta" name="eta_utente">
-            <option value="Minorenne">Minorenne</option>
-            <option value="Maggiorenne">Maggiorenne</option>
-            <option value="Over 65">Over 65</option>
-          </select>
+          <div class="col">
+            <label for="nome">Nome Cognome</label>
+            <input id="nome" type="text" name="nome_utente" value="" placeholder="Inserisci il tuo nome">
+          </div>
+          <div class="col">
+            <label for="km">Km da percorrere</label>
+            <input id="km" type="number" name="numero_km" value="" placeholder="Inserisci Km">
+          </div>
+          <div class="col">
+            <label for="eta">Fascia d'età</label>
+            <select id="eta" name="eta_utente">
+              <option value="Minorenne">Minorenne</option>
+              <option value="Maggiorenne">Maggiorenne</option>
+              <option value="Over 65">Over 65</option>
+            </select>
+          </div>
         </div>
         <!-- <div class="box">
           <h2>Km da percorrere</h2>
@@ -41,11 +47,15 @@
         <!-- inserimento dati -->
       </div>
       <!-- generazione biglietto -->
-      <div class="row">
+      <div class="wrapper">
         <h2 class="title">IL TUO BIGLIETTO</h2>
+        <div class="form_dati">
+          <div class="row">
 
+          </div>
+          <!-- /generazione biglietto -->
+        </div>
       </div>
-      <!-- /generazione biglietto -->
     </div>
     <!-- <script src="js/script.js" charset="utf-8"></script> -->
   </body>
