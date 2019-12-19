@@ -42,6 +42,9 @@ function() {
 
   var offerta = 'Tariffa Standard';
 
+  var carrozza = Math.floor(Math.random() * 10);
+  var codice = Math.floor(Math.random() * 99999) + 90000;
+
   if (fascia == 'Over 65') {
     document.getElementById('prezzo_biglietto').innerHTML = (prezzoKm - ((prezzoKm * 40) / 100)).toFixed(2) + "€";
     offerta = 'Sconto Silver';
@@ -54,7 +57,9 @@ function() {
     document.getElementById('prezzo_biglietto').innerHTML = (prezzoKm) + "€";
   }
 
-  var nomePasseggero = document.getElementById('nome').innerHTML = nomeUtente;
+  var nomePasseggero = document.getElementById('nome').innerHTML = nome;
   document.getElementById ('offerta').innerHTML = offerta;
+  document.getElementById ('carrozza').innerHTML = carrozza;
+  document.getElementById ('codice_cp').innerHTML = codice;
 }
 )
