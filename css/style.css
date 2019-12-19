@@ -6,7 +6,7 @@
 body{
   background-color: #B92D50;
 }
-.form_dati{
+.container{
   display: flex;
   flex-direction: column;
   background-color: white;
@@ -37,4 +37,6 @@ body{
 }
 input{
   height: 25px;
+  border: 1px solid lightgrey;
+  border-radius: 10px;
 }

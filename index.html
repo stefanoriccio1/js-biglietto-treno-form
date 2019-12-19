@@ -13,7 +13,7 @@
     <div class="tabella_prezzi wrapper">
       <!-- inserimento dati -->
       <h1 class="title">CALCOLA IL PREZZO DEL TUO BIGLIETTO</h1>
-      <div class="form_dati">
+      <div class="form_dati container">
         <div class="row">
           <div class="col">
             <label for="nome">Nome Cognome</label>
@@ -53,9 +53,33 @@
       <!-- generazione biglietto -->
       <div class="wrapper">
         <h2 class="title">IL TUO BIGLIETTO</h2>
-        <div class="form_dati">
+        <div class="dati_biglietto container">
+          <h2>Dettagli Passeggero</h2>
           <div class="row">
-
+            <div class="col">
+              <h3>Nome Passeggero</h3>
+              <h4 id="nome_passeggero"></h4>
+            </div>
+            <div class="col">
+              <table>
+                <thead>
+                  <tr>
+                    <th>Offerta</th>
+                    <th>Carrozza</th>
+                    <th>Codice CP</th>
+                    <th>Codice Biglietto</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <th id="offerta"></th>
+                    <th id="carrozza"></th>
+                    <th id="codice_cp"></th>
+                    <th id="codice_biglietto"></th>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
           </div>
           <!-- /generazione biglietto -->
         </div>
