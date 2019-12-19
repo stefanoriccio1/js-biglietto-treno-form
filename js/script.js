@@ -19,7 +19,7 @@ buttonGenera.addEventListener ('click',
     var prezzoKm = (kmDaPercorrere * euroKm).toFixed(2);
 
     var offerta = 'Tariffa Standard';
-    var carrozza = Math.floor(Math.random() * 10);
+    var carrozza = Math.floor(Math.random() * 10) +1;
     var codice = Math.floor(Math.random() * (99999 - 90000 + 1) ) + 90000;
 
     if (fascia == 'Over 65') {
