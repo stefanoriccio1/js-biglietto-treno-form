@@ -41,7 +41,6 @@ function() {
   var prezzoKm = (kmDaPercorrere * euroKm).toFixed(2);
 
   var offerta = 'Tariffa Standard';
-
   var carrozza = Math.floor(Math.random() * 10);
   var codice = Math.floor(Math.random() * 99999) + 90000;
 
@@ -57,7 +56,7 @@ function() {
     document.getElementById('prezzo_biglietto').innerHTML = (prezzoKm) + "€";
   }
 
-  var nomePasseggero = document.getElementById('nome').innerHTML = nomeUtente;
+  document. getElementById('nome_passeggero').innerHTML = nomeUtente
   document.getElementById('offerta').innerHTML = offerta;
   document.getElementById('carrozza').innerHTML = carrozza;
   document.getElementById('codice_cp').innerHTML = codice;
