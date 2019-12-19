@@ -57,9 +57,9 @@ function() {
     document.getElementById('prezzo_biglietto').innerHTML = (prezzoKm) + "€";
   }
 
-  var nomePasseggero = document.getElementById('nome').innerHTML = nome;
-  document.getElementById ('offerta').innerHTML = offerta;
-  document.getElementById ('carrozza').innerHTML = carrozza;
-  document.getElementById ('codice_cp').innerHTML = codice;
+  var nomePasseggero = document.getElementById('nome').innerHTML = nomeUtente;
+  document.getElementById('offerta').innerHTML = offerta;
+  document.getElementById('carrozza').innerHTML = carrozza;
+  document.getElementById('codice_cp').innerHTML = codice;
 }
 )
