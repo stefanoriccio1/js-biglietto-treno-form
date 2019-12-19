@@ -14,28 +14,9 @@ function() {
   // // Sulla base di queste informazioni dovrà calcolare il prezzo totale del viaggio.
   //
   // // Il prezzo del biglietto è definito in base ai km (0.21 € al km)
-  // var euroKm = 0.21;
-  // var prezzoKm = (numeroKm * euroKm).toFixed(2);
-  // console.log (prezzoKm);
+
   // // ma va applicato uno sconto del 20% per i minorenni e del 40% per gli over 65.
-  // var over = 65;
-  // var under = 18;
-  //
-  // if (anni >= over) {
-  //   console.log (prezzoKm - ((prezzoKm * 40) / 100).toFixed(2));
-  //
-  //   document.getElementById('prezzo_biglietto').innerHTML = (prezzoKm - ((prezzoKm * 40) / 100).toFixed(2)) + "€";
-  // }
-  // else if (anni < under){
-  //   console.log (prezzoKm - ((prezzoKm *20) / 100).toFixed(2));
-  //
-  //   document.getElementById('prezzo_biglietto').innerHTML = (prezzoKm - ((prezzoKm *20) / 100).toFixed(2)) + "€";
-  // }
-  // else {
-  //   console.log (prezzoKm);
-  //
-  //   document.getElementById('prezzo_biglietto').innerHTML = (prezzoKm) + "€";
-  // }
+
   //
   // // stampa su foglio html
   // // km
@@ -45,15 +26,35 @@ function() {
 
   // ESERCIZIO ODIERNO
   var inputKm = document.getElementById('km');
-  console.log(inputKm);
-
   var kmDaPercorrere = parseInt(inputKm.value);
   console.log(kmDaPercorrere);
 
   var inputNome = document.getElementById('nome');
-  console.log(inputNome);
-
   var nomeUtente = inputNome.value;
   console.log(nomeUtente);
+
+  var etaSelect = document.getElementById('eta');
+  var fascia = etaSelect.value;
+  console.log(fascia);
+
+  var euroKm = 0.21;
+  var prezzoKm = (kmDaPercorrere * euroKm).toFixed(2);
+
+  var offerta = 'Tariffa Standard';
+
+  if (fascia == 'Over 65') {
+    document.getElementById('prezzo_biglietto').innerHTML = (prezzoKm - ((prezzoKm * 40) / 100)).toFixed(2) + "€";
+    offerta = 'Sconto Silver';
+  }
+  else if (fascia == 'Minorenne'){
+    document.getElementById('prezzo_biglietto').innerHTML = (prezzoKm - ((prezzoKm *20) / 100)).toFixed(2) + "€";
+    offerta = 'Sconto Minorenne';
+  }
+  else {
+    document.getElementById('prezzo_biglietto').innerHTML = (prezzoKm) + "€";
+  }
+
+  var nomePasseggero = document.getElementById('nome').innerHTML = nomeUtente;
+  document.getElementById ('offerta').innerHTML = offerta;
 }
 )
