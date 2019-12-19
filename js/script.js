@@ -42,7 +42,7 @@ function() {
 
   var offerta = 'Tariffa Standard';
   var carrozza = Math.floor(Math.random() * 10);
-  var codice = Math.floor(Math.random() * 99999) + 90000;
+  var codice = Math.floor(Math.random() * (99999 - 90000 + 1) ) + 90000;
 
   if (fascia == 'Over 65') {
     document.getElementById('prezzo_biglietto').innerHTML = (prezzoKm - ((prezzoKm * 40) / 100)).toFixed(2) + "€";
