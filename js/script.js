@@ -40,3 +40,17 @@ buttonGenera.addEventListener ('click',
     document.getElementById('codice_cp').innerHTML = codice;
   }
 )
+
+  var buttonAnnulla = document.getElementById('annulla');
+  buttonAnnulla.addEventListener('click',
+    function () {
+      document. getElementById('nome_passeggero').innerHTML = '';
+      document.getElementById('offerta').innerHTML = '';
+      document.getElementById('carrozza').innerHTML = '';
+      document.getElementById('codice_cp').innerHTML = '';
+
+      document.getElementById('nome').value= '';
+      document.getElementById('km').value= '';
+      document.getElementById('fascia').value= '';
+    }
+  )
