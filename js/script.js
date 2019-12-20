@@ -48,9 +48,10 @@ buttonGenera.addEventListener ('click',
       document.getElementById('offerta').innerHTML = '';
       document.getElementById('carrozza').innerHTML = '';
       document.getElementById('codice_cp').innerHTML = '';
+      document.getElementById('prezzo_biglietto').innerHTML = '';
 
       document.getElementById('nome').value= '';
       document.getElementById('km').value= '';
-      document.getElementById('fascia').value= '';
+      document.getElementById('eta').value= '';
     }
   )
